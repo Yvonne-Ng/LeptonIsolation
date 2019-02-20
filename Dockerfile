@@ -1,6 +1,6 @@
-From atlasml/ml-base
+FROM atlasml/ml-base
 WORKDIR .
-Add . ./
+ADD . ./
 RUN pip install -r requirements.txt --user
 CMD ["python3", "isolation.py"]
 
